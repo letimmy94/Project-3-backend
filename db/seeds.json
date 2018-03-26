@@ -1,0 +1,32 @@
+[
+  {
+    "coach": "Jonathan",
+    "players": ["test", "test1", "test2", "test3", "test4"],
+    "color": "green",
+    "record": {
+      "wins": 0,
+      "losses": 0,
+      "draws": 0
+    }
+  },
+  {
+    "coach": "Timmy",
+    "players": ["test", "test1", "test2", "test3", "test4"],
+    "color": "red",
+    "record": {
+      "wins": 0,
+      "losses": 0,
+      "draws": 0
+    }
+  },
+  {
+    "coach": "Jeff",
+    "players": ["test", "test1", "test2", "test3", "test4"],
+    "color": "orange",
+    "record": {
+      "wins": 0,
+      "losses": 0,
+      "draws": 0
+    }
+  }
+]
