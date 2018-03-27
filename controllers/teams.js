@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const mongoose = require('../db/connection')
 
-const Team = mongoose.model('Team')
+const Team = require('../models/Team')
 
 router.get('/', (req, res) => {
   Team.find({}).then(teams => res.json(teams))

@@ -1,21 +1,20 @@
-const mongoose = require('mongoose')
+const mongoose = require('../db/connection')
 
-const CoachSchema = new mongoose.Schema({
+const CaptainSchema = new mongoose.Schema({
   firstName: '',
   lastName: '',
-  rating: 0
+  email: ''
 })
 
 const PlayerSchema = new mongoose.Schema({
   firstName: '',
   lastName: '',
-  rating: 0,
-  number: 0,
   position: ''
 })
 
 const TeamSchema = new mongoose.Schema({
-  coach: CoachSchema,
+  name: '',
+  captain: CaptainSchema,
   players: [PlayerSchema],
   color: '',
   record: {
@@ -25,6 +24,6 @@ const TeamSchema = new mongoose.Schema({
   }
 })
 
-mongoose.model('Team', TeamSchema)
+const Team = mongoose.model('Team', TeamSchema)
 
-module.exports = mongoose
+module.exports = Team
