@@ -1,7 +1,47 @@
 [
   {
-    "coach": "Jonathan",
-    "players": ["test", "test1", "test2", "test3", "test4"],
+    "coach": {
+      "firstName": "Jurgen",
+      "lastName": "Klopp",
+      "rating": 99
+    },
+    "players": [
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      },
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      },
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      },
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      },
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      }
+    ],
     "color": "green",
     "record": {
       "wins": 0,
@@ -10,8 +50,48 @@
     }
   },
   {
-    "coach": "Timmy",
-    "players": ["test", "test1", "test2", "test3", "test4"],
+    "coach": {
+      "firstName": "Jurgen",
+      "lastName": "Klopp",
+      "rating": 99
+    },
+    "players": [
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      },
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      },
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      },
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      },
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      }
+    ],
     "color": "red",
     "record": {
       "wins": 0,
@@ -20,8 +100,48 @@
     }
   },
   {
-    "coach": "Jeff",
-    "players": ["test", "test1", "test2", "test3", "test4"],
+    "coach": {
+      "firstName": "Jurgen",
+      "lastName": "Klopp",
+      "rating": 99
+    },
+    "players": [
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      },
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      },
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      },
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      },
+      {
+        "firstName": "Jeff",
+        "lastName": "Heller",
+        "rating": 90,
+        "number": 9,
+        "position": "F"
+      }
+    ],
     "color": "orange",
     "record": {
       "wins": 0,
