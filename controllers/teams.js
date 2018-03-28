@@ -30,6 +30,12 @@ router.get('/:id', (req, res) => {
     res.json(team)
   })
 })
+
+router.get('/edit/:id', (req, res) => {
+  Team.findOne({ _id: req.params.id }).then(team => {
+    res.json(team)
+  })
+})
 //  add a player to a team
 router.post('/:id', (req, res) => {
   Team.findOne({ _id: req.params.id }).then(team => {
