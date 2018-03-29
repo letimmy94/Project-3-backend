@@ -8,9 +8,7 @@ router.get('/', (req, res) => {
 })
 // create a new team
 router.post('/', (req, res) => {
-  Team.create(req.body).then(teams => {
-    Team.find({}).then(teams => res.json(teams))
-  })
+  Team.create(req.body).then(res.redirect('/teams'))
 })
 // delete a team by id
 router.delete('/:id', (req, res) => {
