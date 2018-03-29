@@ -30,11 +30,11 @@ router.post('/signup', (req, res) => {
           }
         })
       } else {
-        res.sendStatus(401)
+        res.sendStatus(402)
       }
     })
   } else {
-    res.sendStatus(401)
+    res.sendStatus(403)
   }
 })
 
@@ -61,11 +61,5 @@ router.post('/login', (req, res) => {
     res.sendStatus(401)
   }
 })
-
-// router.get('/:id', (req, res) => {
-//   User.findOne({ _id: req.params.id }).then(user => {
-//     res.json(user)
-//   })
-// })
 
 module.exports = router
