@@ -5,11 +5,13 @@ const cors = require('cors')
 const teamController = require('./controllers/teams')
 const userController = require('./controllers/users')
 const override = require('method-override')
+const passport = require('./config/passport')()
 
 app.use(parser.urlencoded({ extended: true }))
 app.use(parser.json())
 app.use(cors())
 app.use(override('_method'))
+app.use(passport.initialize())
 
 app.get('/', (req, res) => {
   res.send('Welcome')
