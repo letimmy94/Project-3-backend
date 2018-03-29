@@ -31,64 +31,12 @@
         "firstName": "Jeff",
         "lastName": "Heller",
         "position": "F"
-      }
-    ],
-    "color": "green",
-    "record": {
-      "wins": 0,
-      "losses": 0,
-      "draws": 0
-    }
-  },
-  {
-    "name": "Team1",
-    "captain": {
-      "firstName": "Jurgen",
-      "lastName": "Klopp",
-      "email": "test@email.com"
-    },
-    "players": [
-      {
-        "firstName": "Jeff",
-        "lastName": "Heller",
-        "position": "F"
       },
       {
         "firstName": "Jeff",
         "lastName": "Heller",
         "position": "F"
       },
-      {
-        "firstName": "Jeff",
-        "lastName": "Heller",
-        "position": "F"
-      },
-      {
-        "firstName": "Jeff",
-        "lastName": "Heller",
-        "position": "F"
-      },
-      {
-        "firstName": "Jeff",
-        "lastName": "Heller",
-        "position": "F"
-      }
-    ],
-    "color": "green",
-    "record": {
-      "wins": 0,
-      "losses": 0,
-      "draws": 0
-    }
-  },
-  {
-    "name": "Team1",
-    "captain": {
-      "firstName": "Jurgen",
-      "lastName": "Klopp",
-      "email": "test@email.com"
-    },
-    "players": [
       {
         "firstName": "Jeff",
         "lastName": "Heller",

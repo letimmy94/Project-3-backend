@@ -8,9 +8,7 @@ router.get('/', (req, res) => {
 })
 // create a new team
 router.post('/', (req, res) => {
-  Team.create(req.body).then(teams => {
-    Team.find({}).then(teams => res.json(teams))
-  })
+  Team.create(req.body).then(res.redirect('/teams'))
 })
 // delete a team by id
 router.delete('/:id', (req, res) => {
@@ -19,13 +17,19 @@ router.delete('/:id', (req, res) => {
   )
 })
 // edit a team
-router.put('/:id', (req, res) => {
+router.put('/edit/:id', (req, res) => {
   Team.findOneAndUpdate({ _id: req.params.id }, req.body).then(
     res.redirect(`/teams`)
   )
 })
 // view a team
 router.get('/:id', (req, res) => {
+  Team.findOne({ _id: req.params.id }).then(team => {
+    res.json(team)
+  })
+})
+
+router.get('/edit/:id', (req, res) => {
   Team.findOne({ _id: req.params.id }).then(team => {
     res.json(team)
   })
