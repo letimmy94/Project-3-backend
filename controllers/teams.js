@@ -19,7 +19,7 @@ router.delete('/:id', (req, res) => {
   )
 })
 // edit a team
-router.put('/:id', (req, res) => {
+router.put('/edit/:id', (req, res) => {
   Team.findOneAndUpdate({ _id: req.params.id }, req.body).then(
     res.redirect(`/teams`)
   )
