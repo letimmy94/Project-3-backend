@@ -22,17 +22,5 @@ router.put('/:id', (req, res) => {
     Team.find({}).then(teams => res.json(teams))
   )
 })
-// view a team
-router.get('/:id', (req, res) => {
-  Team.findOne({ _id: req.params.id }).then(team => {
-    res.json(team)
-  })
-})
-
-router.get('/edit/:id', (req, res) => {
-  Team.findOne({ _id: req.params.id }).then(team => {
-    res.json(team)
-  })
-})
 
 module.exports = router
