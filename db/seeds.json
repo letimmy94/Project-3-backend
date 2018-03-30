@@ -4,6 +4,7 @@
     "captain": {
       "firstName": "Jurgen",
       "lastName": "Klopp",
+      "position": "F",
       "email": "test@email.com"
     },
     "players": [

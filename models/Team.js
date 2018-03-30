@@ -3,6 +3,7 @@ const mongoose = require('../db/connection')
 const CaptainSchema = new mongoose.Schema({
   firstName: '',
   lastName: '',
+  position: '',
   email: ''
 })
 
