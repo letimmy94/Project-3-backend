@@ -8,12 +8,12 @@ router.get('/', (req, res) => {
 })
 // create a new team
 router.post('/', (req, res) => {
-  Team.create(req.body).then(res.redirect('/teams'))
+  Team.create(req.body).then(() => Team.find({}).then(teams => res.json(teams)))
 })
 // delete a team by id
 router.delete('/:id', (req, res) => {
-  Team.findOneAndRemove({ _id: req.params.id }, req.body).then(
-    res.redirect('/teams')
+  Team.findOneAndRemove({ _id: req.params.id }).then(() =>
+    Team.find({}).then(teams => res.json(teams))
   )
 })
 // edit a team
@@ -32,18 +32,6 @@ router.get('/:id', (req, res) => {
 router.get('/edit/:id', (req, res) => {
   Team.findOne({ _id: req.params.id }).then(team => {
     res.json(team)
-  })
-})
-//  add a player to a team
-router.post('/:id', (req, res) => {
-  Team.findOne({ _id: req.params.id }).then(team => {
-    team.players.push({
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      position: req.body.position
-    })
-    team.save()
-    res.redirect(`/${req.params.id}`)
   })
 })
 
